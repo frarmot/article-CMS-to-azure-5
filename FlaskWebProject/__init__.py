@@ -14,6 +14,7 @@ app.config.from_object(Config)
 logger = logging.getLogger('azure')
 logger.setLevel(logging.INFO)
 handler = logging.StreamHandler()
+#
 logger.addHandler(handler)
 app.logger.setLevel(logging.INFO)
 #
