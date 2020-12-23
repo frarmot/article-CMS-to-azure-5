@@ -12,7 +12,7 @@ app = Flask(__name__)
 app.config.from_object(Config)
 # TODO: Add any logging levels and handlers with app.logger
 app.logger.setLevel(logging.INFO)
-streamHandler = logging.StreamHandler(stream=sys.stdout)
+streamHandler = logging.StreamHandler(stream=sys.stderr)
 streamHandler.setLevel(logging.INFO)
 app.logger.addHandler(streamHandler)
 #logger=logging.getLogger('azure')
